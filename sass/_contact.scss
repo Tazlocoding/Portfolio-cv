@@ -1,0 +1,107 @@
+/****** Partie contact  *****/
+.contact {
+
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .info-container {
+      width: 40rem;
+
+      h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $ecriture;
+        padding-bottom: 1rem;
+      }
+
+      p{
+        font-size: 1.5rem;
+        line-height: 2;
+        color: $couleur-dark;
+        padding: 1rem 0;
+      }
+
+      .box-container {
+        padding: 2rem 0;
+
+        .box {
+          display: flex;
+          gap: 2rem;
+
+          i {
+            font-size: 4rem;
+            color: $crimson;
+            padding-top: .5rem;
+          }
+
+          h3 {
+            font-size: 2rem;
+            color: $ecriture;
+          }
+        }
+      }
+      .share {
+       
+        a{
+          font-size: 2rem;
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: .5rem;
+          border-radius: 50%;
+          background: $light-bg;
+          color: $ecriture;
+          padding: 2rem 0;
+          margin-right: .5rem;
+
+         
+         &:hover{
+            background: $light-color;
+          } 
+        }
+      }
+    }
+    form {
+      flex : 1 1 42rem;
+
+      .inputBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input{
+          width: 49%; 
+        }
+      }
+    
+      .inputBox input,
+      textarea{
+        border-radius: 5rem;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+        color: $ecriture;
+        text-transform: none;
+        margin: .7rem 0;
+        background: $light-color;
+      }
+      textarea {
+        width: 100%;
+        border-radius: 1rem;
+        resize: none;
+        height: 25rem;
+      }
+      .btn{
+        padding: 1rem 3rem;
+        cursor: pointer;
+
+        &:hover{
+          background: $ecriture;
+          color: $crimson;
+
+        }
+      }
+    }
+  }
+}

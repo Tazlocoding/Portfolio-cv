@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@300&display=swap');
+@import "variable";
+@import "contact";
+@import "home";
+@import "apropos";
+@import "portfolio";
+
+
+
+
+*{
+  font-family: "Libre";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar{
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track{
+    background: $font-light;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $crimson;
+    border-radius: 5rem;
+  }
+}
+
+body {
+  background: $font-light;
+  padding-bottom: 6.5rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items:  flex-end;
+}
+
+a{
+  padding: 2rem;
+  font-size: 2rem;
+  background: $light-bg;
+  flex: 1;
+  color: $ecriture;
+  text-align: center;
+  transition: .2s linear;
+
+  i{
+    color: $crimson;
+    padding-right: .5rem;
+  }
+
+  &:hover {
+    /* background: $crimson; */
+    color: $crimson;
+    i{
+      color: $ecriture;
+    }
+    
+  }
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: $light-bg;
+  padding: .7rem;
+  font-size: 1.7rem;
+  color: $ecriture;
+  padding-left: 2rem;
+
+  i{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+    background: $font-light;
+    color: $crimson;
+    border-radius: 50%;
+    margin-left: 1.2rem;
+    transition: .2s linear;
+  }
+
+  &:hover i{
+    margin-left: 2rem;
+  }
+}
+
+
+
+// media queries
+
+@media (max-width: 1200px){
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px){
+  .navbar {
+
+    a{
+      i{
+        padding: 0;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+  .heading {
+    font-size: 12vw;
+  }
+  .home {
+    text-align: center;
+    gap: 2rem;
+
+    .image img {
+      height: 30rem;
+      width: 30rem;
+    }
+
+    .content {
+      h3 {
+        font-size: 3rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .contact .row form .inputBox input{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 450px){
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --couleur-dark: #005156;
+  --ecriture: #E03F10;
+  --fond-dark: #0C293B;
+  --couleur-titre: #F7A746;
+  --fond-light: #EDE7E3;
+  --ESSAI:#1C5D99;
+  --essai2:#251101;
+}
+$crimson:  #1C5D99;
+$font-light:#EDE7E3;
+$light-bg: #0C293B;
+$ecriture: #E03F10;
+$couleur-dark: #005156;
+$light-color: #fcc98a;
+$box-shadow: 0 .5rem 1rem rgba(0,0,0,.7);
+
+@mixin grid($val){
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax($val, 1fr));
+  gap: 1.5rem;
+}
