@@ -33,11 +33,12 @@
   padding-bottom: 1rem;
 }
 
-.contact .row .info-container p {
+.contact .row .info-container P {
   font-size: 1.5rem;
   line-height: 2;
   color: #005156;
   padding: 1rem 0;
+  text-transform: none;
 }
 
 .contact .row .info-container .box-container {
@@ -350,7 +351,7 @@
   font-size: 1.7rem;
   border-radius: 50%;
   background: #1C5D99;
-  color: #E03F10;
+  color: #EDE7E3;
   text-align: center;
   position: absolute;
   top: -1rem;
@@ -416,7 +417,7 @@
   font-size: 1.7rem;
   border-radius: 50%;
   background: #1C5D99;
-  color: #E03F10;
+  color: #EDE7E3;
   text-align: center;
   position: absolute;
   top: -1rem;
@@ -584,24 +585,24 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #E03F10;
+  color: #EDE7E3;
   text-align: center;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
 
 a i {
-  color: #1C5D99;
+  color: #fcc98a;
   padding-right: .5rem;
 }
 
 a:hover {
   /* background: $crimson; */
-  color: #1C5D99;
+  color: #fcc98a;
 }
 
 a:hover i {
-  color: #E03F10;
+  color: #EDE7E3;
 }
 
 section {
