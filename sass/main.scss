@@ -56,20 +56,20 @@ a{
   font-size: 2rem;
   background: $light-bg;
   flex: 1;
-  color: $ecriture;
+  color: $font-light;
   text-align: center;
   transition: .2s linear;
 
   i{
-    color: $crimson;
+    color: $light-color;
     padding-right: .5rem;
   }
 
   &:hover {
     /* background: $crimson; */
-    color: $crimson;
+    color: $light-color;
     i{
-      color: $ecriture;
+      color: $font-light;
     }
     
   }
